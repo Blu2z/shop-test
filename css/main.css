@@ -1,0 +1,196 @@
+.h-row_list li,
+.fl {
+	float: left
+}
+.fr {
+	float: right
+}
+.clearfix:after {
+	clear: both;
+	content: " ";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+body {
+	font: 12px/22px OpenSans-Regular,Arial,sans-serif;
+	margin: 0;
+	height: 2000px;
+}
+li {
+	list-style: none
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover {
+    text-decoration: underline;
+}
+ul {
+	margin: 0;
+	padding: 0;
+}
+header {}
+nav {
+	height: 54px;
+	background: url(./img/main_menu_bg.jpg) center center;
+	width: 100%;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 960px;
+}
+.h-row_list {}
+	.h-row_list li {
+		font-size: 1.1em;
+		letter-spacing: 0.2px;
+		padding: 5px 10px;
+	}
+.h-info {
+	margin-bottom: 3px
+}
+	.h-info>* {
+	display: inline-block;
+	}
+	.h-info_schedule {
+		vertical-align: top;
+	}
+	.h-info_phones {
+		display: inline-table;
+		margin-right: -10px;
+	}
+	.h-info_phones>ul {
+		column-count: 3;
+		column-gap: 1.3em;
+	}
+	.h-info_shopcart {
+		margin: 27px 8px 0 0;
+	}
+.h-row_list--rigth a:hover {
+	    text-decoration: none;
+}
+.h-info_schedule span {
+	font-size: 14px;
+    line-height: 30px;
+    padding-left: 10px;
+    letter-spacing: .2px;
+}
+.i-phone {
+	font-size: 1.2em;
+	font-weight: bold;
+	padding: 3px 8px 0 12px
+}
+	.i-phone>.icon {
+		background: url(./img/main_sprite.png) no-repeat;
+		width: 18px;
+   		height: 20px;
+   		float: left;
+	}
+	.i-phone--life>.icon {background-position: -782px -182px}
+	.i-phone--xyz>.icon {background-position: -782px -206px}
+	.i-phone--mts>.icon {background-position: -782px -235px}
+	.i-phone--city>.icon {background-position: -782px -259px} 
+	.i-phone--cback>.icon {background-position: -782px -288px}
+	.i-phone--skype>.icon {background-position: -782px -314px}
+
+.h-info_logo {
+	background: url(./img/logo-header.png) no-repeat;
+	float: left;
+	height: 76px;
+	position: relative;
+	width: 200px;
+	margin-top: -5px;
+}
+.h-logo_text {
+    bottom: 3px;
+    left: 40px;
+    line-height: 1.1em;
+    position: absolute;
+}
+.h-info_search{
+	padding: 6px 0 0 20px;
+	position: relative;
+}
+	.h-info_search input[type=text] {
+		border-radius: 8px;
+		border: 1px solid ;
+		border-color: #E0E0E0;
+		height: 38px;
+		width: 470px;
+		padding-left:20px;
+	}
+	.h-info_search input[type=submit] {
+		background: url(../../img/main_sprite.png) -644px -173px no-repeat #fff;
+		border-bottom-right-radius: 5px;
+		border-top-right-radius: 5px;
+		border: 1px solid #E0E0E0;
+		cursor: pointer;
+		height: 42px;
+		position: absolute;
+		right: 0;
+		top: 6px;
+		width: 40px;
+	}
+		.h-search_help {
+			padding-left:20px;
+		}
+	.h-shopcart {
+		display: inline-block;
+		text-align: right;
+		vertical-align: middle;
+	}
+	.h-shopcart--img {
+		margin: auto 0;
+		vertical-align: middle;
+		background: url(./img/main_sprite.png) no-repeat -315px -183px;
+		width: 62px;
+    	height: 62px;
+	}
+.h-navbar {}
+	.h-navbar li {
+		float: left;
+		padding: 13px 10px 0 0;
+		/*max-width: 130px;*/
+		line-height: 1em;
+		/*max-width: 130px;*/
+		position: relative;
+	}
+	.h-navbar li:after {
+	background: url(./img/separateTopMenu.png) repeat scroll 0 0 rgba(0,0,0,0);
+    bottom: 0;
+    content: "";
+    height: 40px;
+    left: 0;
+    position: absolute;
+    width: 1px;
+	}
+	.h-navbar li:hover {
+		box-shadow: 0 -9px 7px -3px rgba(0,0,0,0.3) inset;
+	    overflow: hidden;
+	}
+.nav-list {
+    vertical-align: middle;
+    font-family: "Roboto-BoldCondensed";
+    font-size: 14px;
+    line-height: 16px;
+    text-shadow: 0 1px 1px rgba(0,0,1,0.35);
+}
+	.nav-list:hover {
+		text-decoration: none;
+		
+	}
+.nav-list>.icon {
+	background: url(../img/topMenuSprite.png) no-repeat;
+	width: 40px;
+	height: 40px;
+	float: left;
+	padding: 0 3px 0 10px;
+}
+.nav-list--comp>.icon {background-position: 7px -4px;}
+.nav-list--tech>.icon {background-position: -38px -4px;} 
+.nav-list--cook>.icon {background-position: -82px -4px;} 
+.nav-list--home>.icon {background-position: -118px -6px;}
+.nav-list--child>.icon {background-position: -222px -4px;} 
+.nav-list--auto>.icon {background-position: -164px -4px;}
+.nav-list--apple>.icon {background-position: -274px -5px;}
