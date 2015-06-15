@@ -40,6 +40,7 @@ nav {
 	background: url(./img/main_menu_bg.jpg) center center;
 	width: 100%;
 }
+.b-content,
 .wrapper {
 	margin: 0 auto;
 	width: 960px;
@@ -219,3 +220,95 @@ footer {
 	background: url(./img/footer_bg.png);
 	box-shadow: 0 0 10px rgba(0,0,0,0.14) inset;
 }
+footer .h-info_logo {
+	margin: -50px auto 0;
+}
+.copyright,
+.f-about ul {
+	margin: 0 auto;
+	text-align: center;
+}
+.f-about li {
+	display: inline-block;
+	padding: 0 5px;
+}
+.b-content {
+	margin: 0 auto;
+}
+
+/*======compare========*/
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+th {
+	color: #727d87;
+	font: 14px/22px OpenSans-Bold;
+	padding: 5px;
+	text-align: right;
+}
+td {
+	padding: 5px;
+	color: #727d87;
+	font: 14px/22px OpenSans-Regular,Arial,sans-serif;
+}
+.b-content {
+	height: 1300px
+}
+	.content__bread {}
+	.b-pagename {}
+	.b-compare {}
+		.compare__head {}
+			.compare__list {
+				width: 240px;
+				box-shadow: 7px 0 7px rgba(0,0,0,0.12);
+				position: absolute;
+				overflow: hidden;
+			}
+				.compare__list table {
+					width: 960px;
+					table-layout: fixed;
+				}
+					.compare__list tbody {}
+						.compare__list tr {}
+							.compare__list td {
+								visibility:hidden;
+							}
+							.compare__list th {
+								width: 230px
+							}
+							.title th {
+								padding-top: 10px;
+								background-image: url(./img/compare_line.png);
+								background-position: left bottom;
+								background-repeat: no-repeat;
+								color: #515d67;
+								font-size: 16px;
+							}
+				.checkboxs {}
+			.compare__carousel {
+				display: inline-block;
+				overflow: hidden;
+				width: 720px;
+				margin-left: 240px;
+			}
+				.compare__carousel table {}
+					.compare__carousel tbody {}
+						.compare__carousel tr:hover {
+							background-color: #EAEAEA
+						}
+						.compare__carousel th {
+							height: 22px
+						}
+						.compare__carousel td {
+							min-width: 230px;
+							text-align: center;
+
+						}
+				.goods {
+					min-width: 240px;
+					float: left;
+				}
+			.compare__nav {}
+		.compare__body {}
+
