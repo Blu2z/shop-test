@@ -17,6 +17,7 @@ a {
  .h-info_search{
 	color: #AAAAAA;
 }
+.goods__cost,
 .nav-list {
 	color: #fff
 }
@@ -25,4 +26,15 @@ a {
 }
 .compare__carousel tr:hover {
 	background-color: #EAEAEA
+}
+.checkboxs input[type="radio"]:checked + label {
+	color: #253441;
+	background: #fff;
+	border-color: #00a2d3;
+}
+.checkboxs input[type="radio"] + label {
+	color: #a4aab0;
+}
+td, th {
+	color: #727d87;
 }

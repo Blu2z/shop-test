@@ -43,12 +43,12 @@ gulp.task('css', function() {
 
 gulp.task('js', function() {
     gulp.src('js/*.js')
-        .pipe(jshint())
-        .pipe(jshint.reporter('default'))
-        .pipe(uglify())
-        .pipe(rename({
-            suffix: '.min'
-        }))
+        // .pipe(jshint())
+        // .pipe(jshint.reporter('default'))
+        // .pipe(uglify())
+        // .pipe(rename({
+        //     suffix: '.min'
+        // }))
         .pipe(gulp.dest('build/js/'))
         .pipe(connect.reload());
 })
