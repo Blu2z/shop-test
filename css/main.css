@@ -12,7 +12,7 @@
 	height: 0;
 	visibility: hidden;
 }
-h3 {
+h3, p {
 	margin: 0;
 }
 body {
@@ -151,12 +151,13 @@ nav {
 		width: 62px;
     	height: 62px;
 	}
-.h-navbar {}
+.h-navbar {
+	position: relative;
+}
 	.h-navbar li {
 		float: left;
-		padding: 13px 10px 0 0;
+		padding: 13px 5px 0 0;
 		line-height: 1em;
-		position: relative;
 	}
 	.h-navbar li:after {
 	background: url(./img/separateTopMenu.png) repeat scroll 0 0 rgba(0,0,0,0);
@@ -167,9 +168,28 @@ nav {
     position: absolute;
     width: 1px;
 	}
-	.h-navbar li:hover {
-		box-shadow: 0 -9px 7px -3px rgba(0,0,0,0.3) inset;
-	    overflow: hidden;
+	.h-navbar li:last-child:after {
+		display: none;
+	}
+	.h-navbar li:not(:last-child).active {
+		box-shadow: 0 -9px 9px 2px rgba(0,0,0,0.3) inset;
+	}
+	.h-navbar li:before {
+		content: '';
+		position: absolute;
+	}
+	.h-navbar li.active:before {
+		border-radius: 50%;
+		box-shadow: 0 60px 30px rgba(115,252,255,.45);
+		content: "";
+		height: 28px;
+		position: absolute;
+		width: 100%;
+		top: -45px;
+		left: 0;
+	}
+	.h-navbar li:last-child {
+		padding: 0;
 	}
 .nav-list {
     vertical-align: middle;
@@ -196,6 +216,9 @@ nav {
 .nav-list--child>.icon {background-position: -222px -4px;} 
 .nav-list--auto>.icon {background-position: -164px -4px;}
 .nav-list--apple>.icon {background-position: -274px -5px;}
+.nav-list--adver img {
+	margin-top: -5px;
+}
 
 .list_container {
 	font-size: 1.2em;
@@ -258,7 +281,9 @@ td {
 			margin-right: 10px;
 		}
 	.b-pagename {}
-	.b-compare {}
+	.b-compare {
+		margin-bottom: 50px;
+	}
 		.compare__head {
 			min-height: 100px
 		}
@@ -280,8 +305,9 @@ td {
 				text-align: center;
 				height: 100px;
 				vertical-align: bottom;
-				display: table-cell;
+				/*display: table-cell;*/
 				width: 230px;
+				margin: 0 auto;
 			}
 			.goods__cost {
 				width: 105px;
@@ -291,7 +317,7 @@ td {
 				font-family: OpenSans-Bold;
 				font-size: 16px;
 				background-position: -669px -60px;
-				margin: 0 0 0 40px;
+				margin: 0 auto;
 				padding-right: 40px;
 				cursor: pointer;
 				text-align: center
@@ -312,7 +338,7 @@ td {
 				z-index: 2;
 			}
 			.compare__head>.compare__list {
-				height: 235px
+				min-height: 235px
 			}
 			.compare__list table {
 					width: 960px;
@@ -334,8 +360,11 @@ td {
 								color: #515d67;
 								font-size: 16px;
 							}
+				.compare__settings {
+					min-height: 150px
+				}
 				.checkboxs{
-					padding-top: 120px;
+					/*padding-top: 120px;*/
 				}
 					.checkboxs label {
 						height: 20px;
@@ -414,4 +443,63 @@ td {
 	z-index: 5;
 	top: 0;
 	box-shadow: 1px 6px 7px rgba(0,0,0,.12);
+}
+.b-subscription {
+	width: 920px;
+	border-radius: 4px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.12);
+	position: absolute;
+	background: #fff;
+	margin-top: -40px;
+	padding: 20px;
+}
+	.b-subscribe__form {}
+		.subscribe__title {
+			color: #515d67;
+			font-size: 16px;
+			float: left;
+			line-height: 40px;
+		}
+		.subscribe__icon {
+			background: url(./img/main_sprite.png) no-repeat -160px -183px;
+			width: 100px;
+			height: 27px;
+			display: inline-block;
+			float: left;
+			margin: 6px 5px 0 10px;
+		}
+		.subscribe__input {
+			border: 1px solid #dfdfdf;
+			border-radius: 2px;
+			padding: 10px;
+			outline: none;
+			min-width: 420px;
+		}
+		.subscribe__button {
+			background: #5ecbf7;
+			border-radius: 3px;
+			border: 0;
+			color: #fff;
+			cursor: pointer;
+			font-family: OpenSans-Bold;
+			font-size: 15px;
+			margin-left: 45px;
+			padding: 9px 30px;
+		}
+.clearbox {
+	height: 100%;
+	padding-bottom: 50px;
+}
+.submenu {
+    position: absolute;
+    width: 960px;
+    top: 52px;
+    font-size: 20px;
+    z-index: 15;
+    height: 100px;
+    background-color: #333;
+    display: none;
+}
+.navbar {
+	position: relative;
 }
